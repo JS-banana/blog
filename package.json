@@ -9,10 +9,14 @@
     "build": "vuepress build src",
     "build:docs": "vuepress build docs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.27.0"
+  },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "~1.0.0-alpha.0",
     "@vuepress/theme-default": "^1.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "vuepress": "~1.0.0-alpha.30",
     "vuepress-plugin-janitor": "1.0.0",
     "vuepress-plugin-reading-time": "0.1.1",
