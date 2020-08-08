@@ -69,7 +69,6 @@
 </template>
 
 <script>
-import moment from 'moment'
 import TagList from './TagList'
 import PostMeta from './PostMeta'
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'

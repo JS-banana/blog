@@ -30,11 +30,11 @@ export default {
       return this.post.frontmatter.date && this.post.readingTime
     },
     publishedAt () {
-      return this.post.frontmatter.date && moment(this.post.frontmatter.date).format('DD MMM YYYY')
+      return this.post.frontmatter.date && moment(this.post.frontmatter.date, 'YYYY-MM-DD').format('DD MMM YYYY')
     },
     lastUpdated () {
       if (this.$page.lastUpdated) {
-        return this.lastUpdatedText() + ' ' + moment(this.$page.lastUpdated).fromNow()
+        return this.lastUpdatedText() + ' ' + moment(this.$page.lastUpdated,'YYYY-MM-DD').fromNow()
       }
     },
     lastUpdatedText () {
