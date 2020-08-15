@@ -1,4 +1,0 @@
----
-title: Blog
-blogList: true
----
