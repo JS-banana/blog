@@ -1,7 +1,7 @@
 const nav = require('./config/nav.js');
 
 module.exports = {
-  title: "Evan's blog",
+  title: "Sunss's blog",
   description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。', // 描述,以 <meta> 标签渲染到页面html中
   // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/' 
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
@@ -22,7 +22,7 @@ module.exports = {
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/EB-logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'JS-banana/vuepress', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -58,12 +58,12 @@ module.exports = {
     sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi' // 可选的
+      name: 'sunss', // 必需
+      link: 'https://github.com/JS-banana' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
       avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
+      name: 'Sunss',
       slogan: '前端界的小学生'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏
@@ -72,30 +72,30 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com'
+          link: 'mailto:213018@163.com'
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi'
+          link: 'https://github.com/JS-banana'
         },
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173'
+          link: 'https://music.163.com/#/playlist?id=270517163'
         }
       ]
     },
     footer:{ // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      createYear: 2020, // 博客创建年份
+      copyrightInfo: 'Sunss | <a href="" target="_blank">浙ICP备20029629号</a>', // 博客版权信息，支持a标签
     }
   },
   plugins: [ // 插件
-    // [require('./plugins/love-me'), { // 鼠标点击爱心特效
-    //   color: '#11a8cd', // 爱心颜色，默认随机色
-    //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-    // }],
+    [require('./plugins/love-me'), { // 鼠标点击爱心特效
+      color: '#11a8cd', // 爱心颜色，默认随机色
+      excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+    }],
 
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
@@ -153,11 +153,11 @@ module.exports = {
     [
       'vuepress-plugin-baidu-tongji', // 百度统计
       {
-        hm: '503f098e7e5b3a5b5d8c5fc2938af002'
+        hm: '5b593a8c994a360ae5d2a7cd1704ce5c'
       }
     ],
-    [
-      'vuepress-plugin-comment', // 评论
+    // [
+    //   'vuepress-plugin-comment', // 评论
       // {
       //   choosen: 'valine', 
       //   options: {
@@ -167,23 +167,23 @@ module.exports = {
       //     avatar: 'monsterid'
       //   }
       // },
-      {
-        choosen: 'gitalk', 
-        options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'vuepress-theme-vdoing', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
-        }
-      }
-    ],
+      // {
+      //   choosen: 'gitalk', 
+      //   options: {
+      //     clientID: 'a6e1355287947096b88b',
+      //     clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+      //     repo: 'vuepress-theme-vdoing', // GitHub 仓库
+      //     owner: 'xugaoyi', // GitHub仓库所有者
+      //     admin: ['xugaoyi'], // 对仓库有写权限的人
+      //     // distractionFreeMode: true,
+      //     pagerDirection: 'last', // 'first'正序 | 'last'倒序
+      //     id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+      //     title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+      //     labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+      //     body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+      //   }
+      // }
+    // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {

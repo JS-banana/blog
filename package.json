@@ -26,5 +26,6 @@
   },
   "dependencies": {
     "vuepress-plugin-comment": "^0.7.3"
-  }
+  },
+  "homepage": "https://JS-banana.github.io/vuepress"
 }
