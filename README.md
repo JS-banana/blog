@@ -3,4 +3,4 @@
 
 
 ## 致谢
-:heart:感谢Vdoing作者 [xugaoyi](https://github.com/xugaoyi/vuepress-theme-vdoing)
+:heart:感谢Vdoing作者 [sunss](https://github.com/JS-banana/vuepress-theme-vdoing)

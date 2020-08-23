@@ -12,5 +12,5 @@ delete:
  # 要添加、修改front matter的数据 （front matter中没有的数据则添加，已有的数据则覆盖）
 data:
   # author: 
-  #   name: xugaoyi
-  #   link: https://github.com/xugaoyi
+  #   name: sunss
+  #   link: https://github.com/JS-banana
