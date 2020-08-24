@@ -10,15 +10,15 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'b.sunss.com' > CNAME
+echo 'ssscode.com' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:sunss/vuepress-theme-vdoing.git
+  githubUrl=git@github.com:JS-banana/vuepress.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://sunss:${GITHUB_TOKEN}@github.com/sunss/vuepress-theme-vdoing.git
+  githubUrl=https://JS-banana:${GITHUB_TOKEN}@github.com/JS-banana/vuepress.git
   git config --global user.name "sunss"
-  git config --global user.email "894072666@qq.com"
+  git config --global user.email "sss213018@163.com"
 fi
 git init
 git add -A
@@ -26,11 +26,11 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
-echo 'www.sunss.com\nxugaoyi.com' > CNAME  # 自定义域名
+echo 'www.ssscode.com\ssscode.com' > CNAME  # 自定义域名
 if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-  codingUrl=git@e.coding.net:xgy/xgy.git
+  codingUrl=git@e.coding.net:ssscode/blog/vuepress.git
 else
-  codingUrl=https://HmuzsGrGQX:${CODING_TOKEN}@e.coding.net/xgy/xgy.git
+  codingUrl=https://asdJimNXfh:${CODING_TOKEN}@e.coding.net/blog/vuepress.git #注意！！！这里需要使用coding提供的个人令牌的用户名和token
 fi
 git add -A
 git commit -m "${msg}"
