@@ -6,7 +6,7 @@ name: baiduPush
 on:
   push:
   schedule:
-    - cron: '0 23 * * *' # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
+    - cron: "0 23 * * *" # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
 
 # on:
 #   schedule:
@@ -16,7 +16,8 @@ jobs:
   bot:
     runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
     steps:
-      - name: 'Checkout codes' # 步骤一，获取仓库代码
+      - name: "Checkout codes" # 步骤一，获取仓库代码
         uses: actions/checkout@v1
-      - name: 'Run baiduPush' # 步骤二，执行sh命令文件
+      - name: "Run baiduPush" # 步骤二，执行sh命令文件
         run: npm install && npm run baiduPush # 运行目录是仓库根目录
+
