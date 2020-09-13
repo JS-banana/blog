@@ -6,20 +6,7 @@ module.exports = {
         {
             title: "JavaScript",
             collapsable: false, //是否可折叠，可选的，默认true
-            children: [
-                [
-                    "01.JavaScript/01.JavaScript中的名词概念",
-                    "JavaScript中的名词概念",
-                ],
-                ["01.JavaScript/02.数据类型转换", "数据类型转换"],
-                ["01.JavaScript/03.ES5面向对象", "ES5面向对象"],
-                ["01.JavaScript/04.ES6面向对象", "ES6面向对象"],
-                ["01.JavaScript/05.new命令原理", "new命令原理"],
-                [
-                    "01.JavaScript/06.多种数组去重性能对比",
-                    "多种数组去重性能对比",
-                ],
-            ],
+            children: [],
         },
     ],
     "/02.学习/": [
@@ -29,25 +16,15 @@ module.exports = {
             children: [["02.学习/测试", "测试页面"]],
         },
     ],
-    "/03.技术杂谈/": [
+    "/03.技术/": [
         {
-            title: "技术杂谈",
+            title: "技术",
             collapsable: false, //是否可折叠，可选的，默认true
             sidebarDepth: 2, // 深度，可选的, 默认值是 1
             children: [
-                ["01.Git使用手册", "Git使用手册"], // 同 {path: '01.Git使用手册', title: 'Git使用文档'}
-                ["02.GitHub高级搜索技巧", "GitHub高级搜索技巧"],
-                ["03.Markdown使用教程", "Markdown使用教程"],
-                ["04.npm常用命令", "npm常用命令"],
-                ["05.yaml语言教程", "yaml语言教程"],
-                [
-                    "06.解决百度无法收录搭建在GitHub上的个人博客的问题",
-                    "解决百度无法收录搭建在GitHub上的个人博客的问题",
-                ],
-                [
-                    "07.使用Gitalk实现静态博客无后台评论系统",
-                    "使用Gitalk实现静态博客无后台评论系统",
-                ],
+                ["01.Git/01.常用命令", "常用命令"], // 同 {path: '01.Git使用手册', title: 'Git使用文档'}
+                ["02.Github/01.加速", "加速"], //
+                ["03.Linux/01.常用命令", "常用命令"], //
             ],
         },
     ],

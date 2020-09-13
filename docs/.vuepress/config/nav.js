@@ -19,10 +19,9 @@ module.exports = [
         text: "技术",
         link: "/technology/",
         items: [
-            { text: "技术文档", link: "/pages/9a7ee40fc232253e/" },
-            { text: "GitHub技巧", link: "/pages/4c778760be26d8b3/" },
-            { text: "Nodejs", link: "/pages/117708e0af7f0bd9/" },
-            { text: "博客搭建", link: "/pages/41f87d890d0a02af/" },
+            { text: "Git", link: "/pages/04df1e/" },
+            { text: "Github", link: "/pages/329e44/" },
+            { text: "Linux", link: "/pages/87a1a5/" },
         ],
     },
     { text: "关于", link: "/about/" }, //about
@@ -33,6 +32,7 @@ module.exports = [
             { text: "网站", link: "/pages/beb6c0bd8a66cea6/" },
             { text: "资源", link: "/pages/eee83a9211a70f9d/" },
             { text: "Vue资源", link: "/pages/12df8ace52d493f6/" },
+            { text: "优秀技术文章", link: "/pages/f9569f/" },
         ],
     },
     {
