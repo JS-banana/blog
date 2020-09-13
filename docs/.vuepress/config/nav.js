@@ -4,10 +4,8 @@ module.exports = [
         text: "前端",
         link: "/web/", //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
-            {
-                text: "前端文章",
-                link: "/pages/53184c/",
-            },
+            { text: "React", link: "/pages/e01e5d/" },
+            { text: "Vue", link: "/pages/026512/" },
         ],
     },
     {
@@ -22,6 +20,7 @@ module.exports = [
             { text: "Git", link: "/pages/04df1e/" },
             { text: "Github", link: "/pages/329e44/" },
             { text: "Linux", link: "/pages/87a1a5/" },
+            { text: "Nginx", link: "/pages/5cd35f/" },
         ],
     },
     { text: "关于", link: "/about/" }, //about

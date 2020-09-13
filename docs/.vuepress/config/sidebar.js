@@ -6,7 +6,10 @@ module.exports = {
         {
             title: "JavaScript",
             collapsable: false, //是否可折叠，可选的，默认true
-            children: [],
+            children: [
+                ["01.React/01.测试", "测试"],
+                ["02.Vue/01.测试", "测试"],
+            ],
         },
     ],
     "/02.学习/": [
@@ -25,6 +28,7 @@ module.exports = {
                 ["01.Git/01.常用命令", "常用命令"], // 同 {path: '01.Git使用手册', title: 'Git使用文档'}
                 ["02.Github/01.加速", "加速"], //
                 ["03.Linux/01.常用命令", "常用命令"], //
+                ["04.Nginx/01.搭建web服务", "搭建web服务"], //
             ],
         },
     ],
