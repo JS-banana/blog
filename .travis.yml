@@ -1,0 +1,29 @@
+# language: node_js
+# node_js: stable
+
+# sudo: required
+
+# # Travis-CI Caching
+# cache:
+#     directories:
+#         - node_modules
+
+# # S: Build Lifecycle
+# install:
+#     - npm install
+# script:
+#     - npm run build && hexo g && hexo douban && gulp
+#     - cd ./public
+#     - git init
+#     - git config user.name "${GIT_NAME}"
+#     - git config user.email "${GIT_EMAIL}"
+#     - git add .
+#     - git commit -m "Update"
+#     - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+#     - git push --force --quiet "https://${CDT_TOKEN}@${CDT_REF}" master:master
+
+# # after_script:
+
+# branches:
+#     only:
+#         - master

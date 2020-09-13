@@ -46,9 +46,9 @@ module.exports = {
         // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
         bodyBgImg: [
-            "https://cdn.jsdelivr.net/gh/sunss/image_store/blog/20200507175828.jpeg",
-            "https://cdn.jsdelivr.net/gh/sunss/image_store/blog/20200507175845.jpeg",
-            "https://cdn.jsdelivr.net/gh/sunss/image_store/blog/20200507175846.jpeg",
+            "/images/bg-1.jpeg",
+            "/images/bg-2.jpeg",
+            "/images/bg-3.jpeg",
         ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
         bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
@@ -101,9 +101,10 @@ module.exports = {
         },
         footer: {
             // 页脚信息
-            createYear: 2020, // 博客创建年份
+            copyright: "sunss",
+            createYear: "2020.08", // 博客创建年份
             copyrightInfo:
-                'Sunss | <a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备20029629号</a>', // 博客版权信息，支持a标签
+                '<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备20029629号</a>', // 博客版权信息，支持a标签
         },
     },
     plugins: [
