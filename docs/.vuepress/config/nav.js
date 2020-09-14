@@ -11,7 +11,7 @@ module.exports = [
     {
         text: "学习",
         link: "/study/",
-        items: [{ text: "面试", link: "/pages/802a1ca6f7b71c59/" }],
+        items: [{text:"面试",link:"/pages/b98f79/"}],
     },
     {
         text: "技术",

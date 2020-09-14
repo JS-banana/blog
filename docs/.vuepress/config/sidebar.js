@@ -16,7 +16,8 @@ module.exports = {
         {
             title: "学习",
             collapsable: false,
-            children: [["02.学习/测试", "测试页面"]],
+            sidebarDepth: 2, // 深度，可选的, 默认值是 1
+            children: [["02.学习/01.面试", "es6"]],
         },
     ],
     "/03.技术/": [
