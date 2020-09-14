@@ -75,7 +75,7 @@ module.exports = {
       slogan: "学而不思则罔，思而不学则殆。"
     },
     friends: [
-      { name: "小帅の生活", link: "http://blog.ssscode.com/" },
+      { name: "小帅の生活", link: "http://me.ssscode.com/" },
       { name: "刘小旗的技术人生", link: "http://echo1024.com/" }
     ],
     social: {
