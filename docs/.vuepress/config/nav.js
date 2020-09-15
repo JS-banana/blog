@@ -6,12 +6,13 @@ module.exports = [
         items: [
             { text: "React", link: "/pages/e01e5d/" },
             { text: "Vue", link: "/pages/026512/" },
+            { text: "第三方库", link: "/pages/0eb687/" },
         ],
     },
     {
         text: "学习",
         link: "/study/",
-        items: [{text:"面试",link:"/pages/b98f79/"}],
+        items: [{text:"面试",link:"/pages/b98f79/"},{text:"markdown",link:"/pages/143815/"}],
     },
     {
         text: "技术",
