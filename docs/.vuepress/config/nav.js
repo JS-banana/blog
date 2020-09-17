@@ -7,8 +7,8 @@ module.exports = [
       { text: "React", link: "/pages/e01e5d/" },
       { text: "Vue", link: "/pages/026512/" },
       { text: "第三方库", link: "/pages/0eb687/" },
-      { text: "JavaScript", link: "/pages/627866/" },
-    ],
+      { text: "JavaScript", link: "/pages/627866/" }
+    ]
   },
   {
     text: "学习",
@@ -16,7 +16,9 @@ module.exports = [
     items: [
       { text: "面试", link: "/pages/b98f79/" },
       { text: "markdown", link: "/pages/143815/" },
-    ],
+      { text: "前端必读", link: "/pages/c287e1/" },
+      { text: "学习路线", link: "/pages/7d786c/" }
+    ]
   },
   {
     text: "技术",
@@ -25,8 +27,8 @@ module.exports = [
       { text: "Git", link: "/pages/04df1e/" },
       { text: "Github", link: "/pages/329e44/" },
       { text: "Linux", link: "/pages/87a1a5/" },
-      { text: "Nginx", link: "/pages/5cd35f/" },
-    ],
+      { text: "Nginx", link: "/pages/5cd35f/" }
+    ]
   },
   { text: "关于", link: "/about/" }, //about
   {
@@ -36,8 +38,8 @@ module.exports = [
       { text: "网站", link: "/pages/beb6c0bd8a66cea6/" },
       { text: "资源", link: "/pages/eee83a9211a70f9d/" },
       { text: "Vue资源", link: "/pages/12df8ace52d493f6/" },
-      { text: "优秀技术文章", link: "/pages/f9569f/" },
-    ],
+      { text: "优秀技术文章", link: "/pages/f9569f/" }
+    ]
   },
   {
     text: "索引",
@@ -45,7 +47,7 @@ module.exports = [
     items: [
       { text: "分类", link: "/categories/" },
       { text: "标签", link: "/tags/" },
-      { text: "归档", link: "/archives/" },
-    ],
-  },
+      { text: "归档", link: "/archives/" }
+    ]
+  }
 ];
