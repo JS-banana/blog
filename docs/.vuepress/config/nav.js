@@ -28,7 +28,8 @@ module.exports = [
       { text: "Github", link: "/pages/329e44/" },
       { text: "Linux", link: "/pages/87a1a5/" },
       { text: "Nginx", link: "/pages/5cd35f/" },
-      { text: "Windows", link: "/pages/726fac/" }
+      { text: "Windows", link: "/pages/726fac/" },
+      { text: "Cloud&CDN", link: "/pages/23ba62/" }
     ]
   },
   { text: "关于", link: "/about/" }, //about
