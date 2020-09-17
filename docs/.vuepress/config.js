@@ -1,7 +1,7 @@
 const nav = require("./config/nav.js");
 
 module.exports = {
-  title: "小帅の琐碎技术记录",
+  title: "小帅の技术博客",
   description:
     "web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,css3,html5,Node,git,github等技术文章。", // 描述,以 <meta> 标签渲染到页面html中
   // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/'
@@ -76,7 +76,7 @@ module.exports = {
     },
     friends: [
       { name: "小帅の生活", link: "http://me.ssscode.com/" },
-      { name: "刘小旗的技术人生", link: "http://echo1024.com/" }
+      { name: "刘小旗的技术人生", link: "http://www.echo1024.com/" }
     ],
     social: {
       // 社交图标，显示于博主信息栏和页脚栏
