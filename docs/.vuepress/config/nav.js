@@ -27,7 +27,8 @@ module.exports = [
       { text: "Git", link: "/pages/04df1e/" },
       { text: "Github", link: "/pages/329e44/" },
       { text: "Linux", link: "/pages/87a1a5/" },
-      { text: "Nginx", link: "/pages/5cd35f/" }
+      { text: "Nginx", link: "/pages/5cd35f/" },
+      { text: "Windows", link: "/pages/726fac/" }
     ]
   },
   { text: "关于", link: "/about/" }, //about
