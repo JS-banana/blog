@@ -8,6 +8,7 @@ module.exports = [
       { text: 'Vue', link: '/pages/026512/' },
       { text: '第三方库', link: '/pages/0eb687/' },
       { text: 'JavaScript', link: '/pages/627866/' },
+      { text: 'Webpack', link: '/pages/e6f55f/' },
     ],
   },
   {
