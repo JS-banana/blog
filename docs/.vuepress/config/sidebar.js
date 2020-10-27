@@ -19,9 +19,16 @@ module.exports = {
     {
       title: '学习',
       collapsable: false,
-      sidebarDepth: 2, // 深度，可选的, 默认值是 1
+      sidebarDepth: 3, // 深度，可选的, 默认值是 1
       children: [
-        ['02.学习/01.面试', '面试准备内容'],
+        [
+          '02.学习/01.面试/',
+          {
+            title: '面试内容',
+            collapsable: true,
+            children: [['01.准备内容', '基本语法']],
+          },
+        ],
         ['02.学习/02.markdown', '基本语法'],
         ['03.学习/02.推荐书籍', '前端必读'],
         ['02.学习/02.学习路线', '推荐网站'],
