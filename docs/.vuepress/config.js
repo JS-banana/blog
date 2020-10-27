@@ -48,16 +48,16 @@ module.exports = {
     // bannerImg: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-3.jpeg', //banner 背景
 
     bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-1.jpg',
-      'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-2.jpg',
-      'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-3.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-1.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-2.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-3.jpg',
       // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-4.jpg',
       // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-5.jpg',
-      'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-6.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-6.jpg',
       // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-7.jpg',
       'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-8.jpg',
       // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-9.jpg',
-      'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-10.jpg',
+      // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-10.jpg',
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.7, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
