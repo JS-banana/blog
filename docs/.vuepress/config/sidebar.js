@@ -12,6 +12,13 @@ module.exports = {
         ['03.第三方库/01.通用库', '通用库'],
         ['04.JavaScript/01.类型检测', '类型检测'],
         ['05.Webpack/01.webpack优化系列一', 'webpack优化系列一'],
+        [
+          '06.性能优化/01.优化方向',
+          {
+            title: '优化方向',
+            collapsable: true,
+          },
+        ],
       ],
     },
   ],

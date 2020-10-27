@@ -9,6 +9,7 @@ module.exports = [
       { text: '第三方库', link: '/pages/0eb687/' },
       { text: 'JavaScript', link: '/pages/627866/' },
       { text: 'Webpack', link: '/pages/e6f55f/' },
+      { text: '性能优化', link: '/pages/a71b2c/' },
     ],
   },
   {
