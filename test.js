@@ -1,5 +1,29 @@
-let str = '123456789';
+// function wrap(){
+//     let arr=[]
+//     console.log('start',arr)
+//     this.on=function(cb){
+//         arr.push(cb)
+//     }
+//     this.emit=function(cb){
+//         console.log('emit')
+//     }
+// }
 
-for (let key of str) {
-  console.log(key);
+// function useState(curstate){
+//     let arr=[]
+
+//     return [state,setState]
+// }
+
+function wrap() {
+  let a = 0;
+  console.log('a', a);
+  function loop() {
+    console.log('a+1', a + 1);
+  }
+  loop();
 }
+
+setInterval(() => {
+  wrap();
+}, 1000);
