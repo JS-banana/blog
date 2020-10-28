@@ -122,7 +122,7 @@
       <template #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
         <!-- 添加网易云播放插件 -->
-        <div class="categories-wrapper card-box">
+        <!-- <div class="categories-wrapper card-box">
           <iframe
             frameborder="no"
             border="0"
@@ -132,7 +132,7 @@
             height="86"
             src="//music.163.com/outchain/player?type=2&id=5264840&auto=0&height=66"
           ></iframe>
-        </div>
+        </div> -->
         <!-- 传送门 friends -->
         <div class="categories-wrapper card-box">
           <div class="title">
