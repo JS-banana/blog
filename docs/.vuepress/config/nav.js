@@ -9,7 +9,6 @@ module.exports = [
       { text: '第三方库', link: '/pages/0eb687/' },
       { text: 'JavaScript', link: '/pages/627866/' },
       { text: 'Webpack', link: '/pages/e6f55f/' },
-      { text: '性能优化', link: '/pages/a71b2c/' },
     ],
   },
   {
@@ -20,6 +19,7 @@ module.exports = [
       { text: 'markdown', link: '/pages/143815/' },
       { text: '前端必读', link: '/pages/c287e1/' },
       { text: '学习路线', link: '/pages/7d786c/' },
+      { text: '性能优化', link: '/pages/f5ef9e/' },
     ],
   },
   {
