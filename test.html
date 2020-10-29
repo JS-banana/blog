@@ -5,14 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .box{
+        width: 50vh;
+        height: 50vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns:repeat(4, 33.33%);
+        grid-template-rows: 33.33% 33.33% 33.33%;    
+    }
+    .box div{
+        background-color: #999999;
+    }
+    .div{
+        margin-top: 50px;
+        height: 200px;
+        background-color: antiquewhite;
+        /* overflow: hidden; */
+        /* border: 1px solid red; */
+    }
+    .div p{
+        margin-top: 20px;
+        height: 100px;
+        background-color: aqua;
+        overflow: hidden;
+    }
+</style>
 <body>
+    <!-- <div class="box">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div> -->
+
+    <div class="div">113
+        <p>12</p>
+    </div>
     <script>
-        const promise = new Promise(function(resolve, reject) {
-            throw new Error('test');
-        });
-        promise.catch(function(error) {
-            console.log(error);
-        });
 
     </script>
 </body>
