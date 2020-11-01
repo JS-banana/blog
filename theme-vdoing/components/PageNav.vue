@@ -193,8 +193,8 @@ function flatten (items, res) {
       display block
       width 10px
       height 10px
-      border-top 2px solid #999
-      border-right 2px solid #999
+      border-top 2px solid #ccc
+      border-right 2px solid #ccc
       position absolute
       top 0
       right 0

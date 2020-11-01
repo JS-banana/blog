@@ -9,7 +9,7 @@ tagline: 永远期待美好的事情将会发生~
 
 features: # 可选的
   - title: 前端
-    details: JavaScript、ES6、Vue框架等前端技术
+    details: JavaScript、React、Vue框架等前端技术
     link: /web/ # 可选
     imgUrl: /img/web.png # 可选
   - title: 学习
