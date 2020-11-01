@@ -6,7 +6,7 @@ module.exports = [
     items: [
       { text: 'React', link: '/pages/e01e5d/' },
       { text: 'Vue', link: '/pages/026512/' },
-      { text: '第三方库', link: '/pages/0eb687/' },
+      { text: '类库', link: '/pages/0eb687/' },
       { text: 'JavaScript', link: '/pages/627866/' },
       { text: 'Webpack', link: '/pages/e6f55f/' },
       { text: 'ES6', link: '/pages/9c170d/' },
