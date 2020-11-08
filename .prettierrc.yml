@@ -38,7 +38,6 @@
 # }
 
 # yml
-# 如果觉得好用，请收藏或则分享本站
 html:
   editor.defaultFormatter: esbenp.prettier-vscode
 #   css:
