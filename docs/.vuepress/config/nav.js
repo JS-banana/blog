@@ -44,7 +44,7 @@ module.exports = [
       { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
       { text: '资源', link: '/pages/eee83a9211a70f9d/' },
       { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-      { text: '优秀技术文章', link: '/pages/f9569f/' },
+      { text: '优秀技术文章', link: '/pages/0d3db5/' },
     ],
   },
   {
