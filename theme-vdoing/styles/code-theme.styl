@@ -134,6 +134,16 @@ codeThemeLight()
     cursor: help;
   }
 
+  // 行高亮颜色
+  div[class*="language-"]
+    .highlight-lines
+      .highlighted
+        background-color rgba(200, 200, 200, 40%)
+    &.line-numbers-mode
+      .highlight-lines .highlighted
+        &:before
+          background-color rgba(200, 200, 200, 40%)
+
 
 // 适合深色背景 // @import '~prismjs/themes/prism-tomorrow.css'
 codeThemeDark()
@@ -141,6 +151,7 @@ codeThemeDark()
   pre[class*="language-"] {
     color: #ccc;
     background: none;
+    text-shadow: none;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 1em;
     text-align: left;
@@ -236,6 +247,14 @@ codeThemeDark()
   .token.entity,
   .token.url {
     color: #67cdcc;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    background: none;
   }
 
   .token.important,

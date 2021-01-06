@@ -15,7 +15,7 @@
     <!-- Theme by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> -->
     <span>{{ footer.copyright }}</span>
     <template v-if="footer">
-      | © {{ footer.createYear }}-{{ new Date().getFullYear() + '.' + (new Date().getMonth() + 1) }}
+      | © {{ footer.createYear }}-{{ currentDate }}
       <span v-html="footer.copyrightInfo"></span>
     </template>
     <div class="cloud">
@@ -36,6 +36,11 @@ export default {
         },
         footer () {
             return this.$themeConfig.footer;
+        },
+        currentDate(){
+            let currentMonth=new Date().getMonth() + 1
+            currentMonth=currentMonth<10?`0${currentMonth}`:currentMonth
+            return new Date().getFullYear() + '.' + currentMonth
         }
     }
 };
