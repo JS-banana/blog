@@ -85,7 +85,7 @@ module.exports = {
       // 博主信息，显示在首页侧边栏
       avatar: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/2.jpg',
       name: '前端小帅',
-      slogan: '学而不思则罔，思而不学则殆。',
+      slogan: '学而不思则罔，思而不学则殆',
     },
     friends: [
       { name: '小帅の生活', link: 'http://me.ssscode.com/' },
@@ -155,7 +155,7 @@ module.exports = {
           },
           {
             title: '通过百度搜索本站的',
-            frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+            frontUrl: 'https://www.baidu.com/s?wd=site%3Assscode.com%20',
           },
         ],
       },
@@ -234,8 +234,8 @@ module.exports = {
       '@vuepress/last-updated', // "上次更新"时间格式
       {
         transformer: (timestamp, lang) => {
-          const moment = require('moment'); // https://momentjs.com/
-          return moment(timestamp).format('YYYY/MM/DD, H:MM:SS');
+          const dayjs = require('dayjs'); // https://momentjs.com/
+          return dayjs(timestamp).format('YYYY/MM/DD, H:MM:SS');
         },
       },
     ],
