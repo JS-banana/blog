@@ -37,6 +37,7 @@ module.exports = [
     ],
   },
   { text: '关于', link: '/about/' }, //about
+  { text: '友链', link: '/friends/' }, // friends
   {
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
