@@ -1,29 +1,38 @@
-# language: node_js
-# node_js: stable
+# 使用语言
+language: node_js
+# node版本
+node_js: stable
+# 设置只监听哪个分支
+branches:
+  only:
+    - master
 
-# sudo: required
+sudo: required
 
-# # Travis-CI Caching
-# cache:
-#     directories:
-#         - node_modules
+# 缓存，可以节省集成的时间
+cache:
+  directories:
+    - node_modules
 
-# # S: Build Lifecycle
-# install:
-#     - npm install
-# script:
-#     - npm run build && hexo g && hexo douban && gulp
-#     - cd ./public
-#     - git init
-#     - git config user.name "${GIT_NAME}"
-#     - git config user.email "${GIT_EMAIL}"
-#     - git add .
-#     - git commit -m "Update"
-#     - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-#     - git push --force --quiet "https://${CDT_TOKEN}@${CDT_REF}" master:master
+# S: Build Lifecycle
+install:
+  - npm install
+script:
+  - npm run build
+  - cd ./docs/.vuepress/dist
+  - git init
+  - git config user.name "${USER_NAME}"
+  - git config user.email "${USER_EMAIL}"
+  - git add .
+  - git commit -m "Update"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  # - git push --force --quiet "https://${CDT_TOKEN}@${CDT_REF}" master:master
 
-# # after_script:
+# 环境变量
+# 目前只有 GH_TOKEN 是需要在 Travis 配置的
+env:
+  global:
+    - USER_NAME="travis"
+    - USER_EMAIL="sss213018@163.com"
+    - GH_REF="github.com/JS-banana/vuepress-blog-io.git"
 
-# branches:
-#     only:
-#         - master
