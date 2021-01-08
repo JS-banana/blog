@@ -6,9 +6,6 @@ node_js: stable
 branches:
   only:
     - master
-
-sudo: required
-
 # 缓存，可以节省集成的时间
 cache:
   directories:
@@ -24,7 +21,7 @@ script:
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - git add .
-  - git commit -m "Update"
+  - git commit -m "Update from Travis"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
   # - git push --force --quiet "https://${CDT_TOKEN}@${CDT_REF}" master:master
 
