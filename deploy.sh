@@ -12,12 +12,12 @@ cd docs/.vuepress/dist
 # deploy to github
 echo 'ssscode.com' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
+  msg='deploy.sh===>'
   githubUrl=git@github.com:JS-banana/vuepress.git
 else
-  msg='来自github actions的自动部署'
+  msg='deploy.sh===>来自github actions的自动部署'
   githubUrl=https://JS-banana:${GITHUB_TOKEN}@github.com/JS-banana/vuepress.git
-  git config --global user.name "sunss"
+  git config --global user.name "JS-banana"
   git config --global user.email "sss213018@163.com"
 fi
 git init
