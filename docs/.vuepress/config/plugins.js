@@ -1,6 +1,7 @@
 // 插件配置
 module.exports = [
-  [require('../plugins/musicPlayer')],
+  // 音乐播放器
+  // [require('../plugins/musicPlayer')],
   // 本地插件
   [
     require('../plugins/love-me'),
