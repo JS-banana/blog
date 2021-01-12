@@ -1,10 +1,16 @@
 // 插件配置
 module.exports = [
+  // 音乐播放器
+  // [require('../plugins/musicPlayer')],
   // 本地插件
-  // [require('./plugins/love-me'), { // 鼠标点击爱心特效
-  //   color: '#11a8cd', // 爱心颜色，默认随机色
-  //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-  // }],
+  [
+    require('../plugins/love-me'),
+    {
+      // 鼠标点击爱心特效
+      color: '#11a8cd', // 爱心颜色，默认随机色
+      excludeClassName: 'theme-vdoing-content', // 要排除元素的class, 默认空''
+    },
+  ],
 
   'vuepress-plugin-baidu-autopush', // 百度自动推送
 
@@ -78,34 +84,35 @@ module.exports = [
       hm: '503f098e7e5b3a5b5d8c5fc2938af002',
     },
   ],
-  // [
-  //   'vuepress-plugin-comment', // 评论
-  // {
-  //   choosen: 'valine',
-  //   options: {
-  //     el: '#valine-vuepress-comment',
-  //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
-  //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
-  //     avatar: 'monsterid'
-  //   }
-  // },
-  // {
-  //   choosen: 'gitalk',
-  //   options: {
-  //     clientID: 'a6e1355287947096b88b',
-  //     clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-  //     repo: 'vuepress-theme-vdoing', // GitHub 仓库
-  //     owner: 'sunss', // GitHub仓库所有者
-  //     admin: ['sunss'], // 对仓库有写权限的人
-  //     // distractionFreeMode: true,
-  //     pagerDirection: 'last', // 'first'正序 | 'last'倒序
-  //     id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-  //     title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-  //     labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-  //     body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
-  //   }
-  // }
-  // ],
+  [
+    'vuepress-plugin-comment', // 评论
+    // {
+    //   choosen: 'valine',
+    //   options: {
+    //     el: '#valine-vuepress-comment',
+    //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
+    //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
+    //     avatar: 'monsterid',
+    //   },
+    // },
+    {
+      choosen: 'gitalk',
+      options: {
+        clientID: 'ca750f2c591e58235cbb',
+        clientSecret: '895cd1310ab941e0ad01d0e8a9a61c7ea49bc102',
+        repo: 'vuepress-gitalk-comment', // GitHub 仓库
+        owner: 'JS-banana', // GitHub仓库所有者
+        admin: ['JS-banana'], // 对仓库有写权限的人
+        // distractionFreeMode: true,
+        pagerDirection: 'last', // 'first'正序 | 'last'倒序
+        id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+        title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+        labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+        body:
+          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+      },
+    },
+  ],
   [
     '@vuepress/last-updated', // "上次更新"时间格式
     {
