@@ -3,6 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# date
+nowDate=$(date "+%Y-%m-%d %H:%M:%S")
+
 # 生成静态文件
 npm run build
 
@@ -12,10 +15,10 @@ cd docs/.vuepress/dist
 # deploy to github
 echo 'ssscode.com' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy.sh===>'
+  msg="deploy.sh===>update：${nowDate}"
   githubUrl=git@github.com:JS-banana/vuepress.git
 else
-  msg='deploy.sh===>来自github actions的自动部署'
+  msg="deploy.sh===>update：${nowDate}"
   githubUrl=https://JS-banana:${GITHUB_TOKEN}@github.com/JS-banana/vuepress.git
   git config --global user.name "JS-banana"
   git config --global user.email "sss213018@163.com"
