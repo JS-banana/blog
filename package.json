@@ -27,8 +27,6 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "jquery": "3.4.1",
     "vuepress-plugin-comment": "^0.7.3"
   },
   "homepage": "https://JS-banana.github.io/vuepress"
