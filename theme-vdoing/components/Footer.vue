@@ -19,16 +19,26 @@
       <span v-html="footer.copyrightInfo"></span>
     </template>
     <div class="cloud">
-      本网站由
+      <span id="timeDate">{{timeDate}}</span>
+      <span id="times">{{times}}</span>
+      &nbsp;|&nbsp; 
+      <span id="busuanzi_container_site_pv">
+        总访问量 <span id="busuanzi_value_site_pv"></span> 次
+      </span>
+    </div>  
+    <div class="cloud">
       <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
         <img src="/img/upyun.png" alt="" />
       </a>
       提供CDN加速/云存储服务
     </div>
-    <div class="cloud">
-      <span id="timeDate">{{timeDate}}</span>
-      <span id="times">{{times}}</span>
-    </div>
+    <!-- 网站运行时间统计 -->
+    <!-- 网站访问量统计 -->
+    <!-- <div class="cloud">
+        <span id="busuanzi_container_site_pv">
+            本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+        </span>
+    </div> -->
   </div>
 </template>
 
