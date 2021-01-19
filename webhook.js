@@ -31,7 +31,14 @@ handler.on('push', function(event) {
   );
 
   // push请求且为master执行shell脚本
-  event.payload.ref === 'refs/heads/master' && runCommand('sh', ['./webhook.sh'], console.log);
+  if (event.payload.ref === 'refs/heads/gh-pages') {
+    if (event.payload.repository.name === 'vuepress') {
+      // runCommand('sh', [`./vuepress.sh`], console.log);
+    } else if (event.payload.repository.name === 'hexo') {
+      runCommand('sh', [`./hexo.sh`], console.log);
+    }
+    runCommand('sh', [`./webhook.sh`], console.log);
+  }
 });
 
 function runCommand(cmd, args, callback) {
