@@ -22,5 +22,5 @@ module.exports = [
   //     },
   //   ],
   // ['script', { src: 'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js' }],
-  // ['script', { src: 'https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js' }],
+  ['script', { async: 'async', src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }],
 ];
