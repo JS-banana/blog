@@ -29,19 +29,20 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
-# echo 'www.ssscode.com\ssscode.com' > CNAME  # 自定义域名
-# if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-#   echo "111" 
-#   echo "$CODING_TOKEN" 
-#   codingUrl=git@e.coding.net:ssscode/blog/vuepress.git
-# else
-#   echo "222" 
-#   echo "$CODING_TOKEN"
-#   codingUrl=https://asdJimNXfh:${CODING_TOKEN}@e.coding.net/ssscode/blog/vuepress.git #注意！！！这里需要使用coding提供的个人令牌的用户名和token
-# fi
-# git add -A
-# git commit -m "${msg}"
-# git push -f $codingUrl master # 推送到coding
+echo 'www.ssscode.com\ssscode.com' > CNAME  # 自定义域名
+if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+  echo "111" 
+  echo "$CODING_TOKEN" 
+  codingUrl=git@e.coding.net:ssscode/blog/vuepress.git
+else
+  echo "222" 
+  echo "$CODING_TOKEN"
+  # codingUrl=https://asdJimNXfh:${CODING_TOKEN}@e.coding.net/ssscode/blog/vuepress.git #注意！！！这里需要使用coding提供的个人令牌的用户名和token
+  codingUrl=https://ptzv1yuleer1:564844d2122c61eeb3da62b88b1ace37d99918e6@e.coding.net/ssscode/blog/vuepress.git
+fi
+git add -A
+git commit -m "${msg}"
+git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录
 rm -rf docs/.vuepress/dist
