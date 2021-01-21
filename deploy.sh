@@ -37,8 +37,7 @@ if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_T
 else
   echo "222" 
   echo "$CODING_TOKEN"
-  # codingUrl=https://asdJimNXfh:${CODING_TOKEN}@e.coding.net/ssscode/blog/vuepress.git #注意！！！这里需要使用coding提供的个人令牌的用户名和token
-  codingUrl=https://ptzv1yuleer1:564844d2122c61eeb3da62b88b1ace37d99918e6@e.coding.net/ssscode/blog/vuepress.git
+  codingUrl=https://ptzv1yuleer1:${CODING_TOKEN}@e.coding.net/ssscode/blog/vuepress.git #注意！！！这里需要使用coding提供的个人令牌的用户名和token
 fi
 git add -A
 git commit -m "${msg}"
