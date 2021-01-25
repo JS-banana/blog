@@ -10,7 +10,6 @@ server
       console.log('repositories：vuepress');
       runCommand('sh', [`./vuepress.sh`], console.log);
       runCommand('sh', [`./webhook.sh`], console.log);
-      res.end;
     } else if (req.url.search(/hexo\/?$/i) > 0) {
       // hexo
       console.log('repositories：hexo');
