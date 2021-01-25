@@ -21,10 +21,16 @@ cat>webhook.sh<<EOF
 # 确保脚本抛出遇到的错误
 set -e
 
+cd /usr/local/app/vuepress-blog/dist
+
+echo 'start===>git'
+
 git reset --hard origin/master
 git clean -f
 git pull
 git checkout master
+
+echo 'end===>git'
 EOF
 
 echo 'end===>create webhook.sh'
