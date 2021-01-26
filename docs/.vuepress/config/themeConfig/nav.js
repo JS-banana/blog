@@ -27,13 +27,9 @@ module.exports = [
     text: '技术',
     link: '/technology/',
     items: [
-      { text: 'Git', link: '/pages/04df1e/' },
-      { text: 'Github', link: '/pages/329e44/' },
-      { text: 'Linux', link: '/pages/87a1a5/' },
-      { text: 'Nginx', link: '/pages/5cd35f/' },
-      { text: 'Windows', link: '/pages/726fac/' },
-      { text: 'Cloud&CDN', link: '/pages/23ba62/' },
-      { text: 'Npm', link: '/pages/48abbc/' },
+      { text: 'Git&Npm&Github', link: '/pages/04df1e/' },
+      { text: '服务器', link: '/pages/87a1a5/' },
+      { text: '电脑配置', link: '/pages/726fac/' },
     ],
   },
   { text: '关于', link: '/about/' }, //about
