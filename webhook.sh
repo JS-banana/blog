@@ -2,13 +2,19 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-cd /usr/local/app/vuepress-blog/dist
+cd /usr/local/app/vuepress-blog
 
 echo 'start===>git'
 
-git reset --hard origin/master
-git clean -f
-git pull
+# pull 方式
+# git reset --hard origin/master
+# git clean -f
+# git pull
+
+# cp 方式
+git clone git@e.coding.net:ssscode/blog/vuepress.git
+cp -rf ./vuepress/ ./dist
+rm -rf ./vuepress
 
 echo 'end===>git'
 
