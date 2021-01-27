@@ -39,8 +39,8 @@ else
   echo "$CODING_TOKEN"
   codingUrl=https://ptzv1yuleer1:${CODING_TOKEN}@e.coding.net/ssscode/blog/vuepress.git #注意！！！这里需要使用coding提供的个人令牌的用户名和token
 fi
-git add -A
-git commit -m "${msg}"
+# git add -A
+# git commit -m "${msg}"
 git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录
