@@ -7,9 +7,10 @@ cd /usr/local/app/vuepress-blog/dist
 echo 'start===>git'
 
 # pull 方式
+git fetch --all
 git reset --hard origin/master
-git clean -f
-git pull
+# git clean -f
+# git pull
 
 # cp 方式
 # git clone git@e.coding.net:ssscode/blog/vuepress.git
