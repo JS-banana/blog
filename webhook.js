@@ -1,46 +1,53 @@
-// app.js
-const http = require('http');
+const server = require('http');
 const { spawn } = require('child_process');
 
-const createHandler = require('github-webhook-handler');
-// git仓库创建webhook的接口地址,以及密码
-const handler = createHandler({ path: '/webhook', secret: '123456' });
-
-const PORT = 3010;
-
-http
+server
   .createServer((req, res) => {
-    console.log('listen ' + PORT);
-    handler(req, res, function(err) {
-      res.statusCode = 404;
-      res.end('no such location');
-    });
-  })
-  .listen(PORT);
+    // accept request
+    console.log(`accept request：${new Date()}`);
+    // 接收POST请求
+    if (req.method === 'POST') {
+      //TODO: secret 验证
 
-handler.on('error', function(err) {
-  console.error('Error:', err.message);
-});
+      let data = '';
 
-// 监听到push事件的时候执行我们的自动化脚本
-handler.on('push', function(event) {
-  console.log(
-    'Received a push event for %s to %s',
-    event.payload.repository.name,
-    event.payload.ref
-  );
+      req.on('data', chunk => {
+        data += chunk;
+      });
 
-  // push请求且为master执行shell脚本
-  if (event.payload.ref === 'refs/heads/gh-pages') {
-    if (event.payload.repository.name === 'vuepress') {
-      // runCommand('sh', [`./vuepress.sh`], console.log);
-    } else if (event.payload.repository.name === 'hexo') {
-      runCommand('sh', [`./hexo.sh`], console.log);
+      req.on('end', () => {
+        // console.log(JSON.parse(data));
+        try {
+          const reqData = JSON.parse(data);
+          // 确定身份
+          if (reqData.pusher.username !== 'asdJimNXfh') {
+            res.writeHead(400);
+            res.end('noooo!');
+            return;
+          }
+          // 确定分支 master
+          if (reqData.ref === 'refs/heads/master') {
+            // 确定仓库
+            const repository_name = reqData.repository.name;
+            runCommand('sh', [`${repository_name}.sh`], console.log);
+          }
+          // response
+          res.writeHead(200);
+          res.end('ok');
+        } catch (error) {
+          console.log('error：', error);
+          res.writeHead(500);
+          res.end('error!');
+        }
+      });
+    } else {
+      res.writeHead(404);
+      res.end('no info!');
     }
-    runCommand('sh', [`./webhook.sh`], console.log);
-  }
-});
+  })
+  .listen(3010);
 
+// run command
 function runCommand(cmd, args, callback) {
   let response = '';
   const child = spawn(cmd, args);
