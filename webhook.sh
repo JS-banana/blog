@@ -6,16 +6,11 @@ cd /usr/local/app/vuepress-blog/dist
 
 echo 'start===>git'
 
-# pull 方式
+# 覆盖更新
 git fetch --all
 git reset --hard origin/master
 # git clean -f
 # git pull
-
-# cp 方式
-# git clone git@e.coding.net:ssscode/blog/vuepress.git
-# cp -rf ./vuepress/ ./dist
-# rm -rf ./vuepress
 
 echo 'end===>git'
 
@@ -40,6 +35,8 @@ else
   echo -e "\033[41;37m $@ failed. \033[0m"
   exit 1
 fi
+
+echo 'log===>end'
 
 cd - # 退回开始所在目录
 
