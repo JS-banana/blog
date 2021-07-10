@@ -19,7 +19,7 @@ module.exports = [
       { text: '面试', link: '/pages/b98f79/' },
       { text: 'markdown', link: '/pages/143815/' },
       { text: '前端必读', link: '/pages/c287e1/' },
-      { text: '学习路线', link: '/pages/7d786c/' },
+      // { text: '学习路线', link: '/pages/7d786c/' },
       { text: '性能优化', link: '/pages/f5ef9e/' },
     ],
   },
