@@ -18,21 +18,19 @@ module.exports = {
   // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
   // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-  // bannerImg: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-3.jpeg', //banner 背景
-
-  bodyBgImg: [
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-1.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-2.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-3.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-4.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-5.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-6.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-7.jpg',
-    'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-8.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-9.jpg',
-    // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-10.jpg',
-  ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
-  bodyBgImgOpacity: 0.7, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
+  bodyBgImg: '',
+  // [
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-1.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-2.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-3.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-4.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-5.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-6.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-7.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-8.jpg',
+  // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-9.jpg',
+  // ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
+  bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
   // titleBadge: false, // 文章标题前的图标是否显示，默认true
   // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -56,7 +54,8 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg',
+    // avatar: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg',
+    avatar: '/img/photo.jpg',
     name: '前端小帅',
     slogan: '学而不思则罔，思而不学则殆',
   },
@@ -79,9 +78,9 @@ module.exports = {
         link: 'https://github.com/JS-banana',
       },
       {
-        iconClass: 'icon-erji',
-        title: '听音乐',
-        link: 'https://music.163.com/#/playlist?id=370371850',
+        iconClass: 'icon-juejin',
+        title: '掘金',
+        link: 'https://juejin.cn/user/1204720476890477',
       },
     ],
   },
