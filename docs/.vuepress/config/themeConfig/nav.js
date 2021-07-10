@@ -4,12 +4,12 @@ module.exports = [
     text: '前端',
     link: '/web/', //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
+      { text: 'JavaScript', link: '/pages/627866/' },
+      { text: 'ES6', link: '/pages/9c170d/' },
       { text: 'React', link: '/pages/e01e5d/' },
       { text: 'Vue', link: '/pages/026512/' },
       { text: '类库', link: '/pages/0eb687/' },
-      { text: 'JavaScript', link: '/pages/627866/' },
-      { text: 'Webpack', link: '/pages/e6f55f/' },
-      { text: 'ES6', link: '/pages/9c170d/' },
+      { text: '构建工具', link: '/pages/e6f55f/' },
     ],
   },
   {
