@@ -1,7 +1,7 @@
 // 插件配置
 module.exports = [
-  // 音乐播放器
-  // [require('../plugins/musicPlayer')],
+  // 背景
+  [require('../plugins/erraticSignals')],
   // 本地插件
   [
     require('../plugins/love-me'),

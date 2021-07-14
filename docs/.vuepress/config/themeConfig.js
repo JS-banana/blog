@@ -18,7 +18,7 @@ module.exports = {
   // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
   // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-  bodyBgImg: '',
+  bodyBgImg: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-8.jpg',
   // [
   // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-1.jpg',
   // 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-2.jpg',
