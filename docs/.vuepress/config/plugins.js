@@ -1,5 +1,7 @@
 // 插件配置
 module.exports = [
+  // 时钟
+  // [require('../plugins/blackClock')],
   // 背景
   [require('../plugins/erraticSignals')],
   // 本地插件
