@@ -87,6 +87,12 @@ module.exports = [
     },
   ],
   [
+    '@vuepress/google-analytics',
+    {
+      ga: 'G-SCDEY8WH2K', // UA-00000000-0
+    },
+  ],
+  [
     'vuepress-plugin-comment', // 评论
     // {
     //   choosen: 'valine',
