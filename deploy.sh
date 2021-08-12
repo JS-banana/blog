@@ -13,7 +13,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'www.ssscode.com\ssscode.com' > CNAME  # 自定义域名
+# echo 'www.ssscode.com\ssscode.com' > CNAME  # 自定义域名
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg="deploy.sh===>update：${nowDate}"
