@@ -112,7 +112,6 @@ permalink: ${getPermalink()}${file.filePath.indexOf('_posts') > -1 ? '\r\nsideba
         fs.writeFileSync(file.filePath, newData); // 写入
         log(chalk.blue('tip ') + chalk.green(`write frontmatter(写入frontmatter)：${file.filePath} `))
       }
-
     }
   })
 }

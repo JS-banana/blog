@@ -10,6 +10,7 @@ module.exports = [
       { text: 'Vue', link: '/pages/026512/' },
       { text: '类库', link: '/pages/0eb687/' },
       { text: '构建工具', link: '/pages/e6f55f/' },
+      { text: '文章&随笔', link: '/pages/728e7d/' },
     ],
   },
   {
