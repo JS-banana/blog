@@ -5,36 +5,34 @@ module.exports = [
     link: '/web/', //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       { text: 'JavaScript', link: '/pages/627866/' },
-      { text: 'ES6', link: '/pages/9c170d/' },
-      { text: 'React', link: '/pages/e01e5d/' },
-      { text: 'Vue', link: '/pages/026512/' },
-      { text: '类库', link: '/pages/0eb687/' },
-      { text: '构建工具', link: '/pages/e6f55f/' },
-      { text: '文章&随笔', link: '/pages/728e7d/' },
-    ],
-  },
-  {
-    text: '学习',
-    link: '/study/',
-    items: [
       { text: '面试', link: '/pages/b98f79/' },
-      { text: 'markdown', link: '/pages/143815/' },
-      { text: '前端必读', link: '/pages/c287e1/' },
-      // { text: '学习路线', link: '/pages/7d786c/' },
-      { text: '性能优化', link: '/pages/f5ef9e/' },
     ],
   },
   {
-    text: '技术',
-    link: '/technology/',
+    text: '文章',
+    link: '/post/',
     items: [
-      { text: 'Git&Npm&Github', link: '/pages/04df1e/' },
-      { text: '服务器', link: '/pages/87a1a5/' },
-      { text: '电脑配置', link: '/pages/726fac/' },
+      { text: 'JavaScript', link: '/pages/911929/' },
+      { text: 'React', link: '/pages/f2d5b5/' },
+      { text: '构建工具', link: '/pages/c3ea73/' },
     ],
   },
-  { text: '关于', link: '/about/' }, //about
-  { text: '友链', link: '/friends/' }, // friends
+  {
+    text: '更多',
+    link: '/more/',
+    items: [
+      { text: '技术', link: '/pages/04df1e/' },
+      { text: '服务器', link: '/pages/87a1a5/' },
+    ],
+  },
+  {
+    text: '程序猿',
+    link: '/life/',
+    items: [
+      { text: '关于', link: '/about/' }, //about
+      { text: '友链', link: '/friends/' }, // friends
+    ],
+  },
   {
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
