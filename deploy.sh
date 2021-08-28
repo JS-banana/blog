@@ -10,9 +10,14 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 npm run build
 # 生成站点地图
 npm run build:sitemap
+# 生成 xml
+npm run build:ssr
 
 # 把sitmap.xml复制到dist
 cp -f ./sitemap.xml  docs/.vuepress/dist/
+
+# 把 atom.xml 移动到 docs/.vuepress/dist/
+cp -f ./atom.xml  docs/.vuepress/dist/
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
