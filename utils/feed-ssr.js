@@ -17,7 +17,7 @@ function main() {
 
   // 过滤掉非文章内容
   const list = matterFiles
-    .map(n => ({ ...n.data, date: dayjs(n.date).format(DATA_FORMATE) }))
+    .map(n => ({ ...n.data, date: dayjs(n.date).format('YYYY-MM-DD') }))
     .filter(m => {
       if (m.date && m.permalink.indexOf('/pages/') > -1) {
         // 过滤 article 字段
