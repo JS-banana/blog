@@ -87,7 +87,8 @@ module.exports = [
     },
   ],
   [
-    '@vuepress/google-analytics',
+    // '@vuepress/google-analytics',
+    require('../plugins/google-analytics'),
     {
       ga: 'G-SCDEY8WH2K', // UA-00000000-0
     },
