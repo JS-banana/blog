@@ -13,15 +13,26 @@ main();
  */
 function main() {
   const files = readFileList(); // 读取所有md文件数据
-  const matterFiles = files.map(file => matter(fs.readFileSync(file.filePath, 'utf8')));
-
+  const matterFiles = files.map(file => {
+    const matterData = matter(fs.readFileSync(file.filePath, 'utf8'));
+    // 获取文件创建日期
+    const stat = fs.statSync(file.filePath);
+    matterData.date = dateFormat(getBirthtime(stat));
+    return matterData;
+  });
   // 过滤掉非文章内容
   const list = matterFiles
-    .map(n => ({ ...n.data, date: dayjs(n.date).format('YYYY-MM-DD') }))
+    .map(n => ({
+      ...n.data,
+      date: dayjs(n.data.date)
+        .subtract(8, 'hour')
+        .format(DATA_FORMATE), // 处理UTC时间
+      lastUpdated: dayjs(n.date).format(DATA_FORMATE),
+    }))
     .filter(m => {
       if (m.date && m.permalink.indexOf('/pages/') > -1) {
-        // 过滤 article 字段
-        if (!m.article || (typeof m.article === 'boolean' && m.article)) {
+        const keys = Object.keys(m);
+        if (!keys.includes('article') || (keys.includes('article') && m.article)) {
           return m;
         }
       }
@@ -29,7 +40,7 @@ function main() {
 
   const sortList = sortPostsByDate(list);
 
-  console.log(sortList);
+  // console.log(sortList, sortList.length);
   toXml(sortList);
 }
 
@@ -53,7 +64,7 @@ function toXml(posts) {
           <title>${item.title}</title>
           <link href="https://ssscode.com${item.permalink}" />
           <id>https://ssscode.com${item.permalink}</id>
-          <published>${item.date}</published>
+          <published>${item.date.slice(0, 10)}</published>
           <update>${item.date}</update>
         </entry>`;
       })
@@ -62,9 +73,27 @@ function toXml(posts) {
   `;
 
   fs.writeFile(path.resolve(process.cwd(), './atom.xml'), feed, function(err) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
     console.log('文件写入成功！');
   });
+}
+
+// 获取文件创建时间
+function getBirthtime(stat) {
+  // 在一些系统下无法获取birthtime属性的正确时间，使用atime代替
+  return stat.birthtime.getFullYear() != 1970 ? stat.birthtime : stat.atime;
+}
+
+// 日期的格式
+function dateFormat(date) {
+  return `${date.getFullYear()}-${zero(date.getMonth() + 1)}-${zero(date.getDate())} ${zero(
+    date.getHours()
+  )}:${zero(date.getMinutes())}:${zero(date.getSeconds())}`;
+}
+
+// 小于10补0
+function zero(d) {
+  return d.toString().padStart(2, '0');
 }
 
 // 按时间排序
