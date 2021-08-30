@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/sssgoeasy/8425ad8c-04b9-408a-861c-72a2fe89f692/f61e0ab3-7bbb-4768-950d-090b77a30386/_apis/work/boardbadge/fdfd28bc-52e2-49e0-bc21-2180c329677b)](https://dev.azure.com/sssgoeasy/8425ad8c-04b9-408a-861c-72a2fe89f692/_boards/board/t/f61e0ab3-7bbb-4768-950d-090b77a30386/Microsoft.RequirementCategory)
 <p align="center">
     <a href="https://ssscode.com/" target="_blank" rel="noopener noreferrer">
         <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg" alt="logo">
