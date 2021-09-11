@@ -12,9 +12,8 @@ module.exports = [
     text: '文章',
     link: '/post/',
     items: [
-      { text: 'JavaScript', link: '/pages/911929/' },
-      { text: 'React', link: '/pages/f2d5b5/' },
-      { text: '构建工具', link: '/pages/c3ea73/' },
+      { text: '前端', link: '/pages/911929/' },
+      { text: '服务', link: '/pages/337720/' },
     ],
   },
   {
