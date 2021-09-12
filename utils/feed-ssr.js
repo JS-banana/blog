@@ -46,8 +46,7 @@ function main() {
 
 // 生成 xml
 function toXml(posts) {
-  const feed = `
-  <?xml version="1.0" encoding="utf-8"?>
+  const feed = `<?xml version="1.0" encoding="utf-8"?>
   <feed xmlns="http://www.w3.org/2005/Atom">
     <title>小帅の技术博客</title>
     <link href="https://ssscode.com/atom.xml" rel="self"/>
@@ -70,8 +69,7 @@ function toXml(posts) {
         </entry>`;
       })
       .join('\n')}
-  </feed>
-  `;
+  </feed>`;
 
   fs.writeFile(path.resolve(process.cwd(), './atom.xml'), feed, function(err) {
     if (err) return console.log(err);
