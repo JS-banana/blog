@@ -45,6 +45,7 @@ function main() {
 }
 
 // 生成 xml
+// 替换 xml 中的 & 符号为 &amp;
 function toXml(posts) {
   const feed = `<?xml version="1.0" encoding="utf-8"?>
   <feed xmlns="http://www.w3.org/2005/Atom">
@@ -61,7 +62,7 @@ function toXml(posts) {
       .map(item => {
         return `
         <entry>
-          <title>${item.title}</title>
+          <title>${item.title.replace(/(&)/g, '&amp;')}</title>
           <link href="https://ssscode.com${item.permalink}" />
           <id>https://ssscode.com${item.permalink}</id>
           <published>${item.date.slice(0, 10)}</published>
