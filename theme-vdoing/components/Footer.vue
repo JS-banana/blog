@@ -21,14 +21,14 @@
     <div class="cloud">
       <span id="timeDate">{{timeDate}}</span>
       <span id="times">{{times}}</span>
-      &nbsp;|&nbsp; 
+      &nbsp;|&nbsp;
       <span id="busuanzi_container_site_pv">
         总访问量 <span id="busuanzi_value_site_pv"></span> 次
       </span>
-    </div>  
+    </div>
     <div class="cloud">
-      <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
-        <img src="/img/upyun.png" alt="" />
+      <a href="https://cloud.tencent.com/" target="_blank">
+        <img src="https://cloudcache.tencent-cloud.com/qcloud/portal/kit/images/slice/logo.f0c9ade4.svg" alt="" />
       </a>
       提供CDN加速/云存储服务
     </div>
@@ -115,7 +115,7 @@ export default {
     align-items: center;
 
     img {
-      width: 2.9rem;
+      width: 3.2rem;
       vertical-align: middle;
     }
   }
