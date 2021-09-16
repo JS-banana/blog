@@ -8,6 +8,12 @@
     <!-- <a href="https://github.com/JS-banana/vuepress/actions?query=workflow%3AbaiduPush">
         <img src="https://github.com/xugaoyi/vuepress-theme-vdoing/workflows/baiduPush/badge.svg" alt="baiduPush">
     </a> -->
+    <a href="https://github.com/JS-banana/vuepress">
+        <img src="https://visitor-badge.glitch.me/badge?page_id=js-banana.vuepress" alt="vuepress">
+    </a>
+    <a href="https://github.com/JS-banana/vuepress/stargazers">
+        <img src="https://img.shields.io/github/stars/JS-banana/vuepress" alt="stars">
+    </a>
     <a href="https://juejin.im/user/1204720476890477">
         <img src="https://img.shields.io/badge/Juejin-掘金-blue" alt="掘金">
     </a>
