@@ -9,8 +9,7 @@
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://ssscode.com && bash baiduPush.sh",
     "googlePush": "bash googlePush.sh",
-    "build:sitemap":"node sitemap.js",
-    "build:ssr":"node utils/feed-ssr.js"
+    "build:feed":"node utils/feed-generator.js"
   },
   "license": "MIT",
   "devDependencies": {

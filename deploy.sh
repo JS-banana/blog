@@ -8,10 +8,8 @@ nowDate=$(date "+%Y-%m-%d %H:%M:%S")
 
 # 生成静态文件
 npm run build
-# 生成站点地图
-npm run build:sitemap
 # 生成 xml
-npm run build:ssr
+npm run build:feed
 
 # 把sitmap.xml复制到dist
 cp -f ./sitemap.xml  docs/.vuepress/dist/

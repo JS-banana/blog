@@ -1,3 +1,7 @@
+/**
+ * Feed、RSS、ATOM、sitemap 生成器
+ * https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap?hl=zh-cn
+ */
 const fs = require('fs');
 const path = require('path');
 const dayjs = require('dayjs');
@@ -10,6 +14,7 @@ main();
 
 /**
  * 主体函数
+ * 处理数据源
  */
 function main() {
   const files = readFileList(); // 读取所有md文件数据
@@ -41,12 +46,18 @@ function main() {
   const sortList = sortPostsByDate(list);
 
   // console.log(sortList, sortList.length);
-  toXml(sortList);
+  try {
+    atomGenerator(sortList);
+    siteMapGenerator(sortList);
+  } catch (error) {
+    console.log('feed-generator：发生错误！！！');
+    console.log(error);
+  }
 }
 
-// 生成 xml
-// 替换 xml 中的 & 符号为 &amp;
-function toXml(posts) {
+// 生成 atom.xml
+// 注：xml语法 & 符号需要替换为 &amp;
+function atomGenerator(posts) {
   const feed = `<?xml version="1.0" encoding="utf-8"?>
   <feed xmlns="http://www.w3.org/2005/Atom">
     <title>小帅の技术博客</title>
@@ -60,8 +71,7 @@ function toXml(posts) {
     </author>
     ${posts
       .map(item => {
-        return `
-        <entry>
+        return `<entry>
           <title>${item.title.replace(/(&)/g, '&amp;')}</title>
           <link href="https://ssscode.com${item.permalink}" />
           <id>https://ssscode.com${item.permalink}</id>
@@ -69,12 +79,32 @@ function toXml(posts) {
           <update>${item.date}</update>
         </entry>`;
       })
-      .join('\n')}
+      .join('')}
   </feed>`;
 
   fs.writeFile(path.resolve(process.cwd(), './atom.xml'), feed, function(err) {
     if (err) return console.log(err);
-    console.log('文件写入成功！');
+    console.log('atom.xml 写入成功！');
+  });
+}
+
+// 生成站点地图
+function siteMapGenerator(posts) {
+  const siteMap = `<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${posts
+      .map(item => {
+        return `<url>
+          <loc>https://ssscode.com${item.permalink}</loc>
+          <lastmod>${item.date.slice(0, 10)}</lastmod>
+        </url>`;
+      })
+      .join('')}
+    </urlset>`;
+
+  fs.writeFile(path.resolve(process.cwd(), './sitemap.xml'), siteMap, function(err) {
+    if (err) return console.log(err);
+    console.log('sitemap.xml 写入成功！');
   });
 }
 
