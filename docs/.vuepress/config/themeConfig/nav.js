@@ -22,16 +22,11 @@ module.exports = [
     items: [
       { text: '技术', link: '/pages/04df1e/' },
       { text: '服务器', link: '/pages/87a1a5/' },
+      { text: '程序猿', link: '/life/' },
     ],
   },
-  {
-    text: '程序猿',
-    link: '/life/',
-    items: [
-      { text: '关于', link: '/about/' }, //about
-      { text: '友链', link: '/friends/' }, // friends
-    ],
-  },
+  { text: '关于', link: '/about/' }, //about
+  { text: '友链', link: '/friends/' }, // friends
   {
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
