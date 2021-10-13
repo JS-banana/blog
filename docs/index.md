@@ -2,7 +2,7 @@
 home: true
 # heroImage: /img/web.png
 heroText: Web前端技术博客
-tagline: 永远期待美好的事情将会发生~
+tagline: 拥抱技术，热爱生活~
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/bg-black-9.jpg # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
