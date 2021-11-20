@@ -14,6 +14,7 @@ module.exports = [
     items: [
       { text: '前端', link: '/pages/911929/' },
       { text: '服务', link: '/pages/337720/' },
+      { text: 'Node', link: '/pages/6e5f36/' },
     ],
   },
   {
