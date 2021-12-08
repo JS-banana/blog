@@ -6,7 +6,7 @@ module.exports = {
   title: '小帅の技术博客',
   description:
     'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,css3,html5,Node,git,github等技术文章。', // 描述,以 <meta> 标签渲染到页面html中
-  // base: '/vuepress/', // '/<github仓库名>/'， 默认'/'
+  base: '/vuepress/', // '/<github仓库名>/'， 默认'/'
   head,
   markdown: {
     lineNumbers: true, // 代码行号
