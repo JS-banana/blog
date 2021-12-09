@@ -4,16 +4,18 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
+    "build:github":"cross-env APP_ENV=github vuepress build docs",
     "deploy": "bash deploy.sh",
     "coding": "bash coding.sh",
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://ssscode.com && bash baiduPush.sh",
     "googlePush": "bash googlePush.sh",
-    "build:feed":"node utils/feed-generator.js"
+    "build:feed": "node utils/feed-generator.js"
   },
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.8.2",
+    "cross-env": "^7.0.3",
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",

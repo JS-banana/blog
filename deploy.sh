@@ -49,3 +49,26 @@ git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录
 rm -rf docs/.vuepress/dist
+
+
+# 区分不同环境部署
+# 部署到 github
+echo "--开始--打包部署至github的dist文件"
+
+npm run build:github
+
+cp -f ./sitemap.xml  docs/.vuepress/dist/
+
+cp -f ./atom.xml  docs/.vuepress/dist/
+
+cd docs/.vuepress/dist
+
+git init
+git add -A
+git commit -m "${msg}"
+git push -f $githubUrl master:gh-pages # 推送到github
+
+echo "--结束--打包部署至github的dist文件"
+
+cd - # 退回开始所在目录
+rm -rf docs/.vuepress/dist

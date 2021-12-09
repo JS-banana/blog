@@ -2,11 +2,16 @@ const plugins = require('./config/plugins.js');
 const head = require('./config/head.js');
 const themeConfig = require('./config/themeConfig.js');
 
+// 区分不同环境部署
+const isGithub = process.env.APP_ENV === 'github';
+const BASE = isGithub ? '/vuepress/' : '/';
+console.log({ isGithub, BASE });
+
 module.exports = {
   title: '小帅の技术博客',
   description:
     'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,css3,html5,Node,git,github等技术文章。', // 描述,以 <meta> 标签渲染到页面html中
-  base: '/vuepress/', // '/<github仓库名>/'， 默认'/'
+  base: BASE, // '/<github仓库名>/'， 默认'/'
   head,
   markdown: {
     lineNumbers: true, // 代码行号
