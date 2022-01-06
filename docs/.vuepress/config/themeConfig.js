@@ -54,8 +54,8 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    // avatar: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg',
-    avatar: '/img/photo.jpg',
+    avatar: 'https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/photo.jpg',
+    // avatar: '/img/photo.jpg',
     name: '前端小帅',
     slogan: '学而不思则罔，思而不学则殆',
   },
