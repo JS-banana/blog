@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://ssscode.com/" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg" alt="logo">
+  <a href="https://blog.ssscode.com/" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/photo.jpg" alt="logo">
   </a>
 </p>
 
@@ -28,15 +28,11 @@
   </a>
 </p>
 
-<h1 align="center">小帅的琐碎博客记录</h1>
+<h1 align="center">小帅の技术博客</h1>
 
 <h6 align="center">
   Github的部署：<a href="https://JS-banana.github.io/blog">https://JS-banana.github.io/blog</a>
 </h6>
 <h6 align="center">
-  个人服务器：<a href="http://ssscode.com/">http://ssscode.com/</a>
+  个人服务器：<a href="http://blog.ssscode.com/">http://blog.ssscode.com/</a>
 </h6>
-
-<p align="center">
-  同步部署至`GitHub Pages`、`Coding`等其他云服务商
-</p>
