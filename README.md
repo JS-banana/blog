@@ -17,14 +17,14 @@
     <a href="https://juejin.im/user/1204720476890477">
         <img src="https://img.shields.io/badge/Juejin-掘金-blue" alt="掘金">
     </a>
-    <a href="https://github.com/JS-banana/vuepress/actions">
-        <img src="https://img.shields.io/badge/github-action-brightgreen" alt="github">
+    <a href="https://github.com/JS-banana/vuepress/actions/workflows/deploy_github.yml">
+        <img src="https://github.com/JS-banana/vuepress/actions/workflows/deploy_github.yml/badge.svg" alt="github">
     </a>
-    <a href="https://travis-ci.com/">
-        <img src="https://img.shields.io/badge/travis-action-yellow" alt="travis">
+    <a href="https://github.com/JS-banana/vuepress/actions/workflows/deploy_coding.yml">
+        <img src="https://github.com/JS-banana/vuepress/actions/workflows/deploy_coding.yml/badge.svg" alt="coding">
     </a>
-    <a href="https://travis-ci.com/JS-banana/vuepress">
-        <img src="https://travis-ci.com/JS-banana/vuepress.svg?branch=master" alt="build">
+    <a href="https://github.com/JS-banana/vuepress/actions/workflows/schedule.yml">
+        <img src="https://github.com/JS-banana/vuepress/actions/workflows/schedule.yml/badge.svg" alt="schedule">
     </a>
     <!-- <a href="https://github.com/JS-banana/vuepress/stargazers">
         <img src="https://img.shields.io/github/stars/JS-banana/vuepress?logo=ReverbNation&logoColor=rgba(255,255,255,.6)" alt="GitHub stars">
@@ -37,5 +37,5 @@
     Github的部署：<a href="https://JS-banana.github.io/vuepress">https://JS-banana.github.io/vuepress</a>
 </h6>
 <h6 align="center">
-    个人服务器：<a href="http://www.ssscode.com/">http://www.ssscode.com/</a>
+    个人服务器：<a href="http://ssscode.com/">http://ssscode.com/</a>
 </h6>
