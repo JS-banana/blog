@@ -33,6 +33,8 @@ codingUrl=https://ptzv1yuleer1:${CODING_TOKEN}@e.coding.net/ssscode/blog/vuepres
 
 git config --global user.name "JS-banana"
 git config --global user.email "sss213018@163.com"
+
+git init
 git add -A
 git commit -m "${msg}"
 git push -f $codingUrl master # 推送到coding
