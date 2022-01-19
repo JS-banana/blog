@@ -8,11 +8,10 @@ on:
 
 jobs:
   build:
-    name: deploy-site
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14, 16]
+        node-version: [14]
 
     steps:
       # 1.检出仓库
