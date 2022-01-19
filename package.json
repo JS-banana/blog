@@ -5,6 +5,7 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "build:github":"cross-env APP_ENV=github vuepress build docs",
+    "deploy":"bash deploy.sh",
     "deploy_github": "bash deploy_github.sh",
     "deploy_coding": "bash deploy_coding.sh",
     "editFm": "node utils/editFrontmatter.js",
@@ -33,5 +34,5 @@
   "dependencies": {
     "vuepress-plugin-comment": "^0.7.3"
   },
-  "homepage": "https://JS-banana.github.io/vuepress"
+  "homepage": "https://JS-banana.github.io/blog"
 }

@@ -29,7 +29,7 @@ cd docs/.vuepress/dist
 echo "开始git提交 ====>"
 
 msg="deploy_github：${nowDate}"
-githubUrl=https://JS-banana:${GITHUB_TOKEN}@github.com/JS-banana/vuepress.git
+githubUrl=https://JS-banana:${GITHUB_TOKEN}@github.com/JS-banana/blog.git
 
 git config --global user.name "JS-banana"
 git config --global user.email "sss213018@163.com"
