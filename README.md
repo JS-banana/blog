@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://blog.ssscode.com/" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/photo.jpg" alt="logo">
+    <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/photo_nobg.png" alt="logo">
   </a>
 </p>
 
