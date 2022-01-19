@@ -4,7 +4,7 @@ const themeConfig = require('./config/themeConfig.js');
 
 // 区分不同环境部署
 const isGithub = process.env.APP_ENV === 'github';
-const BASE = isGithub ? '/vuepress/' : '/';
+const BASE = isGithub ? '/blog/' : '/';
 console.log({ isGithub, BASE });
 
 module.exports = {

@@ -1,41 +1,38 @@
 <p align="center">
-    <a href="https://ssscode.com/" target="_blank" rel="noopener noreferrer">
-        <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/avatar-ssscode.jpg" alt="logo">
-    </a>
+  <a href="https://blog.ssscode.com/" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="https://cdn.jsdelivr.net/gh/JS-banana/images/vuepress/photo_nobg.png" alt="logo">
+  </a>
 </p>
 
 <p align="center">
-    <!-- <a href="https://github.com/JS-banana/vuepress/actions?query=workflow%3AbaiduPush">
-        <img src="https://github.com/xugaoyi/vuepress-theme-vdoing/workflows/baiduPush/badge.svg" alt="baiduPush">
-    </a> -->
-    <a href="https://github.com/JS-banana/vuepress">
-        <img src="https://visitor-badge.glitch.me/badge?page_id=js-banana.vuepress" alt="vuepress">
-    </a>
-    <a href="https://github.com/JS-banana/vuepress/stargazers">
-        <img src="https://img.shields.io/github/stars/JS-banana/vuepress" alt="stars">
-    </a>
-    <a href="https://juejin.im/user/1204720476890477">
-        <img src="https://img.shields.io/badge/Juejin-掘金-blue" alt="掘金">
-    </a>
-    <a href="https://github.com/JS-banana/vuepress/actions">
-        <img src="https://img.shields.io/badge/github-action-brightgreen" alt="github">
-    </a>
-    <a href="https://travis-ci.com/">
-        <img src="https://img.shields.io/badge/travis-action-yellow" alt="travis">
-    </a>
-    <a href="https://travis-ci.com/JS-banana/vuepress">
-        <img src="https://travis-ci.com/JS-banana/vuepress.svg?branch=master" alt="build">
-    </a>
-    <!-- <a href="https://github.com/JS-banana/vuepress/stargazers">
-        <img src="https://img.shields.io/github/stars/JS-banana/vuepress?logo=ReverbNation&logoColor=rgba(255,255,255,.6)" alt="GitHub stars">
-    </a> -->
+  <a href="https://github.com/JS-banana/blog">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=js-banana.blog" alt="blog">
+  </a>
+  <a href="https://github.com/JS-banana/blog/stargazers">
+    <img src="https://img.shields.io/github/stars/JS-banana/blog" alt="stars">
+  </a>
+  <a href="https://juejin.im/user/1204720476890477">
+    <img src="https://img.shields.io/badge/Juejin-掘金-blue" alt="掘金">
+  </a>
 </p>
 
-<h1 align="center">小帅的琐碎博客记录</h1>
+<p align="center">
+  <a href="https://github.com/JS-banana/blog/actions/workflows/deploy_github.yml">
+    <img src="https://github.com/JS-banana/blog/actions/workflows/deploy_github.yml/badge.svg" alt="github">
+  </a>
+  <a href="https://github.com/JS-banana/blog/actions/workflows/deploy_coding.yml">
+    <img src="https://github.com/JS-banana/blog/actions/workflows/deploy_coding.yml/badge.svg" alt="coding">
+  </a>
+  <a href="https://github.com/JS-banana/blog/actions/workflows/schedule.yml">
+    <img src="https://github.com/JS-banana/blog/actions/workflows/schedule.yml/badge.svg" alt="schedule">
+  </a>
+</p>
+
+<h1 align="center">小帅の技术博客</h1>
 
 <h6 align="center">
-    Github的部署：<a href="https://JS-banana.github.io/vuepress">https://JS-banana.github.io/vuepress</a>
+  Github的部署：<a href="https://JS-banana.github.io/blog">https://JS-banana.github.io/blog</a>
 </h6>
 <h6 align="center">
-    个人服务器：<a href="http://www.ssscode.com/">http://www.ssscode.com/</a>
+  个人服务器：<a href="http://blog.ssscode.com/">http://blog.ssscode.com/</a>
 </h6>
