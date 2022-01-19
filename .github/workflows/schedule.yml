@@ -35,7 +35,7 @@ jobs:
 
       # 百度/谷歌收录
       - name: push site to Baidu/Google
-      - run: |
+        run: |
           pnpm run baiduPush
           pnpm run googlePush
 
