@@ -10,7 +10,7 @@ const readFileList = require("./modules/readFileList")
 
 const DATA_FORMATE = "YYYY-MM-DD HH:mm:ss"
 // const BASE_URL = "https://ssscode.com"
-const BASE_URL = "https://js-banana.github.io/vuepress"
+const BASE_URL = "https://js-banana.github.io/blog"
 
 main()
 
