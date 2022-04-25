@@ -1,13 +1,13 @@
 module.exports = [
   { text: '首页', link: '/' },
-  {
-    text: '前端',
-    link: '/web/', //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-    items: [
-      { text: 'JavaScript', link: '/pages/627866/' },
-      { text: '面试', link: '/pages/b98f79/' },
-    ],
-  },
+  // {
+  //   text: '前端',
+  //   link: '/web/', //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+  //   items: [
+  //     { text: 'JavaScript', link: '/pages/627866/' },
+  //     { text: '面试', link: '/pages/b98f79/' },
+  //   ],
+  // },
   {
     text: '文章',
     link: '/post/',
