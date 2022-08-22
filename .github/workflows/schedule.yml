@@ -1,41 +1,41 @@
-## 利用GitHub Actions每天定时给百度推送链接，提高收录率 ##
+# ## 利用GitHub Actions每天定时给百度推送链接，提高收录率 ##
 
-name: Push Site To Baidu/Google
+# name: Push Site To Baidu/Google
 
-# 两种触发方式：一、push代码，二、每天国际标准时间23点（北京时间+8即早上7点）运行
-on:
-  push:
-  schedule:
-    - cron: "0 23 * * *"
+# # 两种触发方式：一、push代码，二、每天国际标准时间23点（北京时间+8即早上7点）运行
+# on:
+#   push:
+#   schedule:
+#     - cron: "0 23 * * *"
 
-jobs:
-  bot:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14]
+# jobs:
+#   bot:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [14]
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
 
-      - name: Set pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.15.1
+#       - name: Set pnpm
+#         uses: pnpm/action-setup@v2.0.1
+#         with:
+#           version: 6.15.1
 
-      - name: Set node version to ${{ matrix.node_version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node_version }}
-          cache: "pnpm" # 缓存
+#       - name: Set node version to ${{ matrix.node_version }}
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: ${{ matrix.node_version }}
+#           cache: "pnpm" # 缓存
 
-      - name: Install deps
-        run: pnpm install
+#       - name: Install deps
+#         run: pnpm install
 
-      # 百度/谷歌收录
-      - name: push site to Baidu/Google
-        run: |
-          pnpm run baiduPush
-          pnpm run googlePush
+#       # 百度/谷歌收录
+#       - name: push site to Baidu/Google
+#         run: |
+#           pnpm run baiduPush
+#           pnpm run googlePush
 
