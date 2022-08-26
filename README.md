@@ -20,12 +20,12 @@
   <a href="https://github.com/JS-banana/blog/actions/workflows/deploy_github.yml">
     <img src="https://github.com/JS-banana/blog/actions/workflows/deploy_github.yml/badge.svg" alt="github">
   </a>
-  <a href="https://github.com/JS-banana/blog/actions/workflows/deploy_coding.yml">
+  <!-- <a href="https://github.com/JS-banana/blog/actions/workflows/deploy_coding.yml">
     <img src="https://github.com/JS-banana/blog/actions/workflows/deploy_coding.yml/badge.svg" alt="coding">
   </a>
   <a href="https://github.com/JS-banana/blog/actions/workflows/schedule.yml">
     <img src="https://github.com/JS-banana/blog/actions/workflows/schedule.yml/badge.svg" alt="schedule">
-  </a>
+  </a> -->
 </p>
 
 <h1 align="center">小帅の技术博客</h1>
@@ -34,5 +34,5 @@
   Github的部署：<a href="https://JS-banana.github.io/blog">https://JS-banana.github.io/blog</a>
 </h6>
 <h6 align="center">
-  个人服务器：<a href="http://blog.ssscode.com/">http://blog.ssscode.com/</a>
+  个人服务器：<a href="http://blog.ssscode.com/">http://ssscode.com/</a>
 </h6>
