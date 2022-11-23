@@ -13,14 +13,14 @@ module.exports = [
   ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
   // 网站关联Google AdSense 与 html格式广告支持
-  //   [
-  //     'script',
-  //     {
-  //       'data-ad-client': 'ca-pub-7828333725993554',
-  //       async: 'async',
-  //       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-  //     },
-  //   ],
+    [
+      'script',
+      {
+        async: 'async',
+        crossorigin: 'anonymous',
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2069361349446100',
+      },
+    ],
   // ['script', { src: 'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js' }],
   ['script', { async: 'async', src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }],
 ];
