@@ -9,8 +9,8 @@ const matter = require("gray-matter") // FrontMatter解析器 https://github.com
 const readFileList = require("./modules/readFileList")
 
 const DATA_FORMATE = "YYYY-MM-DD HH:mm:ss"
-const BASE_URL = "https://ssscode.com"
-// const BASE_URL = "https://js-banana.github.io/blog"
+// const BASE_URL = "https://ssscode.com"
+const BASE_URL = "https://js-banana.github.io/blog"
 
 main()
 
