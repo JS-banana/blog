@@ -33,6 +33,6 @@
 <h6 align="center">
   Github的部署：<a href="https://JS-banana.github.io/blog">https://JS-banana.github.io/blog</a>
 </h6>
-<h6 align="center">
+<!-- <h6 align="center">
   个人服务器：<a href="http://blog.ssscode.com/">http://ssscode.com/</a>
-</h6>
+</h6> -->
