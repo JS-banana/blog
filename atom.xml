@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>小帅の技术博客</title>
+    <link href="https://js-banana.github.io/blog/atom.xml" rel="self"/>
+    <link href="https://js-banana.github.io/blog/"/>
+    <updated>2025-09-01 09:21:47</updated>
+    <id>https://js-banana.github.io/blog/</id>
+    <author>
+      <name>JS-banana</name>
+      <email>sss213018@163.com</email>
+    </author>
+    <entry>
+          <title>说说call、apply、bind是如何改变this的</title>
+          <link href="https://js-banana.github.io/blog/pages/e4bf0d/" />
+          <id>https://js-banana.github.io/blog/pages/e4bf0d/</id>
+          <published>2024-03-29</published>
+          <update>2024-03-29 02:35:32</update>
+        </entry><entry>
+          <title>从输入 URL 到页面加载完成发生了什么？</title>
+          <link href="https://js-banana.github.io/blog/pages/d865ca/" />
+          <id>https://js-banana.github.io/blog/pages/d865ca/</id>
+          <published>2024-03-29</published>
+          <update>2024-03-29 02:30:38</update>
+        </entry><entry>
+          <title>JavaScript进阶—— new 的执行过程</title>
+          <link href="https://js-banana.github.io/blog/pages/8d9372/" />
+          <id>https://js-banana.github.io/blog/pages/8d9372/</id>
+          <published>2024-03-26</published>
+          <update>2024-03-26 02:59:37</update>
+        </entry><entry>
+          <title>JavaScript进阶——map与reduce的前世今生😋</title>
+          <link href="https://js-banana.github.io/blog/pages/131b3a/" />
+          <id>https://js-banana.github.io/blog/pages/131b3a/</id>
+          <published>2024-03-24</published>
+          <update>2024-03-24 15:59:53</update>
+        </entry><entry>
+          <title>作用域与闭包</title>
+          <link href="https://js-banana.github.io/blog/pages/17a56a/" />
+          <id>https://js-banana.github.io/blog/pages/17a56a/</id>
+          <published>2024-03-21</published>
+          <update>2024-03-21 10:27:59</update>
+        </entry><entry>
+          <title>执行上下文</title>
+          <link href="https://js-banana.github.io/blog/pages/be6faa/" />
+          <id>https://js-banana.github.io/blog/pages/be6faa/</id>
+          <published>2024-03-20</published>
+          <update>2024-03-20 13:39:01</update>
+        </entry><entry>
+          <title>基于富文本编辑器的$关键字智能匹配功能</title>
+          <link href="https://js-banana.github.io/blog/pages/b50e04/" />
+          <id>https://js-banana.github.io/blog/pages/b50e04/</id>
+          <published>2023-09-23</published>
+          <update>2023-09-23 01:55:56</update>
+        </entry><entry>
+          <title>虚拟列表入门篇——3分钟带你快速实现一个高性能列表组件</title>
+          <link href="https://js-banana.github.io/blog/pages/c8aad6/" />
+          <id>https://js-banana.github.io/blog/pages/c8aad6/</id>
+          <published>2023-03-30</published>
+          <update>2023-03-30 07:46:18</update>
+        </entry><entry>
+          <title>2022年终总结（技术篇）</title>
+          <link href="https://js-banana.github.io/blog/pages/72eab4/" />
+          <id>https://js-banana.github.io/blog/pages/72eab4/</id>
+          <published>2023-02-14</published>
+          <update>2023-02-14 13:37:50</update>
+        </entry><entry>
+          <title>vue编译为js的研究</title>
+          <link href="https://js-banana.github.io/blog/pages/394c89/" />
+          <id>https://js-banana.github.io/blog/pages/394c89/</id>
+          <published>2022-12-07</published>
+          <update>2022-12-07 13:14:20</update>
+        </entry><entry>
+          <title>【配置文件分析】——json、yaml、toml</title>
+          <link href="https://js-banana.github.io/blog/pages/131a7a/" />
+          <id>https://js-banana.github.io/blog/pages/131a7a/</id>
+          <published>2022-09-06</published>
+          <update>2022-09-06 10:53:10</update>
+        </entry><entry>
+          <title>【前端组件化】系列第二篇——monorepo方案实战</title>
+          <link href="https://js-banana.github.io/blog/pages/eb2149/" />
+          <id>https://js-banana.github.io/blog/pages/eb2149/</id>
+          <published>2022-09-05</published>
+          <update>2022-09-05 07:52:50</update>
+        </entry><entry>
+          <title>【前端组件化】系列第一篇——方案探究</title>
+          <link href="https://js-banana.github.io/blog/pages/f120e1/" />
+          <id>https://js-banana.github.io/blog/pages/f120e1/</id>
+          <published>2022-08-18</published>
+          <update>2022-08-18 02:06:18</update>
+        </entry><entry>
+          <title>WebSocket连接过程及原理分析</title>
+          <link href="https://js-banana.github.io/blog/pages/4d7766/" />
+          <id>https://js-banana.github.io/blog/pages/4d7766/</id>
+          <published>2022-06-08</published>
+          <update>2022-06-08 08:06:13</update>
+        </entry><entry>
+          <title>Koa之洋葱模型分析</title>
+          <link href="https://js-banana.github.io/blog/pages/d8b0e2/" />
+          <id>https://js-banana.github.io/blog/pages/d8b0e2/</id>
+          <published>2022-04-30</published>
+          <update>2022-04-30 03:04:13</update>
+        </entry><entry>
+          <title>JS类型、类型判断、类型转换</title>
+          <link href="https://js-banana.github.io/blog/pages/b92fbe/" />
+          <id>https://js-banana.github.io/blog/pages/b92fbe/</id>
+          <published>2022-04-26</published>
+          <update>2022-04-26 07:33:02</update>
+        </entry><entry>
+          <title>从宏观层面理解——浏览器中JavaScript的运行机制</title>
+          <link href="https://js-banana.github.io/blog/pages/78d8b6/" />
+          <id>https://js-banana.github.io/blog/pages/78d8b6/</id>
+          <published>2022-04-26</published>
+          <update>2022-04-26 07:21:38</update>
+        </entry><entry>
+          <title>多级别权限设计思考及实战</title>
+          <link href="https://js-banana.github.io/blog/pages/ff7971/" />
+          <id>https://js-banana.github.io/blog/pages/ff7971/</id>
+          <published>2022-04-25</published>
+          <update>2022-04-25 07:02:58</update>
+        </entry><entry>
+          <title>2021年终总结（技术篇）</title>
+          <link href="https://js-banana.github.io/blog/pages/8e4019/" />
+          <id>https://js-banana.github.io/blog/pages/8e4019/</id>
+          <published>2022-01-05</published>
+          <update>2022-01-05 03:06:07</update>
+        </entry><entry>
+          <title>微信每天自动给女朋友发早安和情话</title>
+          <link href="https://js-banana.github.io/blog/pages/5fe09e/" />
+          <id>https://js-banana.github.io/blog/pages/5fe09e/</id>
+          <published>2021-12-21</published>
+          <update>2021-12-21 09:26:51</update>
+        </entry><entry>
+          <title>vite + vue3 + ts 使用总结</title>
+          <link href="https://js-banana.github.io/blog/pages/33f292/" />
+          <id>https://js-banana.github.io/blog/pages/33f292/</id>
+          <published>2021-11-29</published>
+          <update>2021-11-29 11:34:48</update>
+        </entry><entry>
+          <title>vite + vue3 + setup + pinia + ts 项目实战</title>
+          <link href="https://js-banana.github.io/blog/pages/2833ad/" />
+          <id>https://js-banana.github.io/blog/pages/2833ad/</id>
+          <published>2021-11-22</published>
+          <update>2021-11-22 11:26:19</update>
+        </entry><entry>
+          <title>使用WakaTime统计你的Coding数据</title>
+          <link href="https://js-banana.github.io/blog/pages/b63015/" />
+          <id>https://js-banana.github.io/blog/pages/b63015/</id>
+          <published>2021-11-20</published>
+          <update>2021-11-20 08:47:50</update>
+        </entry><entry>
+          <title>性能爆表的SolidJs</title>
+          <link href="https://js-banana.github.io/blog/pages/1c6866/" />
+          <id>https://js-banana.github.io/blog/pages/1c6866/</id>
+          <published>2021-11-15</published>
+          <update>2021-11-15 13:30:58</update>
+        </entry><entry>
+          <title>NodeJs获取照片信息并分类、缩略图生成</title>
+          <link href="https://js-banana.github.io/blog/pages/d42185/" />
+          <id>https://js-banana.github.io/blog/pages/d42185/</id>
+          <published>2021-11-14</published>
+          <update>2021-11-14 09:46:34</update>
+        </entry><entry>
+          <title>新一代ORM-Prisma</title>
+          <link href="https://js-banana.github.io/blog/pages/34f09d/" />
+          <id>https://js-banana.github.io/blog/pages/34f09d/</id>
+          <published>2021-10-27</published>
+          <update>2021-10-27 13:10:58</update>
+        </entry><entry>
+          <title>记忆函数 memoize</title>
+          <link href="https://js-banana.github.io/blog/pages/8dab58/" />
+          <id>https://js-banana.github.io/blog/pages/8dab58/</id>
+          <published>2021-10-13</published>
+          <update>2021-10-13 14:19:13</update>
+        </entry><entry>
+          <title>JavaScript数组方法reduce的妙用</title>
+          <link href="https://js-banana.github.io/blog/pages/8b7d10/" />
+          <id>https://js-banana.github.io/blog/pages/8b7d10/</id>
+          <published>2021-09-30</published>
+          <update>2021-09-30 07:15:25</update>
+        </entry><entry>
+          <title>前端大神器——puppeteer无头浏览器</title>
+          <link href="https://js-banana.github.io/blog/pages/6e5f36/" />
+          <id>https://js-banana.github.io/blog/pages/6e5f36/</id>
+          <published>2021-09-22</published>
+          <update>2021-09-22 12:41:41</update>
+        </entry><entry>
+          <title>JavaScript事件通信研究</title>
+          <link href="https://js-banana.github.io/blog/pages/413e1f/" />
+          <id>https://js-banana.github.io/blog/pages/413e1f/</id>
+          <published>2021-09-12</published>
+          <update>2021-09-12 08:21:44</update>
+        </entry><entry>
+          <title>Python库Feedparser+Atom订阅源的妙用</title>
+          <link href="https://js-banana.github.io/blog/pages/7722fd/" />
+          <id>https://js-banana.github.io/blog/pages/7722fd/</id>
+          <published>2021-09-11</published>
+          <update>2021-09-11 08:20:11</update>
+        </entry><entry>
+          <title>GitHub和Coding双管齐下白嫖一个网站</title>
+          <link href="https://js-banana.github.io/blog/pages/5b52be/" />
+          <id>https://js-banana.github.io/blog/pages/5b52be/</id>
+          <published>2021-09-11</published>
+          <update>2021-09-11 02:11:38</update>
+        </entry><entry>
+          <title>Webpack+React+TypeScript构建一个标准化应用</title>
+          <link href="https://js-banana.github.io/blog/pages/c3ea73/" />
+          <id>https://js-banana.github.io/blog/pages/c3ea73/</id>
+          <published>2021-08-18</published>
+          <update>2021-08-18 14:09:02</update>
+        </entry><entry>
+          <title>项目开发的一些思考</title>
+          <link href="https://js-banana.github.io/blog/pages/728e7d/" />
+          <id>https://js-banana.github.io/blog/pages/728e7d/</id>
+          <published>2021-08-13</published>
+          <update>2021-08-13 10:03:25</update>
+        </entry><entry>
+          <title>发布订阅模式vs观察者模式</title>
+          <link href="https://js-banana.github.io/blog/pages/911929/" />
+          <id>https://js-banana.github.io/blog/pages/911929/</id>
+          <published>2021-07-18</published>
+          <update>2021-07-18 01:41:49</update>
+        </entry><entry>
+          <title>【rollup】构建发布一个npm包</title>
+          <link href="https://js-banana.github.io/blog/pages/b849f8/" />
+          <id>https://js-banana.github.io/blog/pages/b849f8/</id>
+          <published>2021-07-09</published>
+          <update>2021-07-09 06:53:32</update>
+        </entry><entry>
+          <title>【vite】构建标准化react应用</title>
+          <link href="https://js-banana.github.io/blog/pages/428be4/" />
+          <id>https://js-banana.github.io/blog/pages/428be4/</id>
+          <published>2021-07-09</published>
+          <update>2021-07-09 06:48:05</update>
+        </entry><entry>
+          <title>react状态管理器-zustand</title>
+          <link href="https://js-banana.github.io/blog/pages/f2d5b5/" />
+          <id>https://js-banana.github.io/blog/pages/f2d5b5/</id>
+          <published>2021-06-02</published>
+          <update>2021-06-02 10:48:03</update>
+        </entry><entry>
+          <title>WebHook结合GitHub Action与Coding实现博客持续集成部署到个人服务器</title>
+          <link href="https://js-banana.github.io/blog/pages/337720/" />
+          <id>https://js-banana.github.io/blog/pages/337720/</id>
+          <published>2021-01-25</published>
+          <update>2021-01-25 13:52:47</update>
+        </entry><entry>
+          <title>网络相关、HTTP、TCP</title>
+          <link href="https://js-banana.github.io/blog/pages/164ff6/" />
+          <id>https://js-banana.github.io/blog/pages/164ff6/</id>
+          <published>2020-11-05</published>
+          <update>2020-11-05 08:16:55</update>
+        </entry><entry>
+          <title>Promise&amp;Generator&amp;Async 异步函数剖析</title>
+          <link href="https://js-banana.github.io/blog/pages/95b01d/" />
+          <id>https://js-banana.github.io/blog/pages/95b01d/</id>
+          <published>2020-10-28</published>
+          <update>2020-10-28 06:16:12</update>
+        </entry><entry>
+          <title>Webpack项目优化之CDN加速、Gzip压缩和SplitChunks拆分</title>
+          <link href="https://js-banana.github.io/blog/pages/e6f55f/" />
+          <id>https://js-banana.github.io/blog/pages/e6f55f/</id>
+          <published>2020-09-27</published>
+          <update>2020-09-27 09:24:32</update>
+        </entry><entry>
+          <title>又拍云为网站/图片加速</title>
+          <link href="https://js-banana.github.io/blog/pages/23ba62/" />
+          <id>https://js-banana.github.io/blog/pages/23ba62/</id>
+          <published>2020-09-17</published>
+          <update>2020-09-17 12:45:34</update>
+        </entry><entry>
+          <title>windows环境变量配置</title>
+          <link href="https://js-banana.github.io/blog/pages/726fac/" />
+          <id>https://js-banana.github.io/blog/pages/726fac/</id>
+          <published>2020-09-17</published>
+          <update>2020-09-17 10:58:37</update>
+        </entry><entry>
+          <title>类型检测</title>
+          <link href="https://js-banana.github.io/blog/pages/627866/" />
+          <id>https://js-banana.github.io/blog/pages/627866/</id>
+          <published>2020-09-16</published>
+          <update>2020-09-16 12:06:55</update>
+        </entry><entry>
+          <title>面试内容梳理</title>
+          <link href="https://js-banana.github.io/blog/pages/b98f79/" />
+          <id>https://js-banana.github.io/blog/pages/b98f79/</id>
+          <published>2020-09-14</published>
+          <update>2020-09-14 15:13:26</update>
+        </entry><entry>
+          <title>Nginx搭建web服务</title>
+          <link href="https://js-banana.github.io/blog/pages/5cd35f/" />
+          <id>https://js-banana.github.io/blog/pages/5cd35f/</id>
+          <published>2020-09-13</published>
+          <update>2020-09-13 06:39:38</update>
+        </entry><entry>
+          <title>GitHub加速技巧</title>
+          <link href="https://js-banana.github.io/blog/pages/329e44/" />
+          <id>https://js-banana.github.io/blog/pages/329e44/</id>
+          <published>2020-09-13</published>
+          <update>2020-09-13 06:29:06</update>
+        </entry><entry>
+          <title>Git常用命令</title>
+          <link href="https://js-banana.github.io/blog/pages/04df1e/" />
+          <id>https://js-banana.github.io/blog/pages/04df1e/</id>
+          <published>2020-09-13</published>
+          <update>2020-09-13 06:27:02</update>
+        </entry><entry>
+          <title>Linux常用命令</title>
+          <link href="https://js-banana.github.io/blog/pages/87a1a5/" />
+          <id>https://js-banana.github.io/blog/pages/87a1a5/</id>
+          <published>2020-09-13</published>
+          <update>2020-09-13 06:18:10</update>
+        </entry>
+  </feed>
